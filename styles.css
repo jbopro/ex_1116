@@ -1,0 +1,152 @@
+* {
+  
+    box-sizing: border-box;
+  }
+
+
+html {
+  font-size: 18px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background-color: #dedede;
+  color: rgb(0 0 0 / .5);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.1rem;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: -.3rem;
+  margin-top: 1.5rem;
+  color: #000;
+  line-height: 1.5rem;;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+header {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.container {
+  max-width:75%;
+  margin: 0 auto;
+
+}
+
+.header__content {
+  /* max-width: 100%; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 1rem;
+  align-self: center;
+}
+
+.links {
+  display: flex;
+  width: 80%;
+  border-radius: 40px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.13);
+  transition: .5s;
+  transition-timing-function: ease;
+}
+
+.links:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.links__img {
+  max-width: 100px;
+  margin-right: 1rem;
+  background: dodgerblue;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  padding: 2rem 1rem 0 1rem;
+  align-items: center;
+  
+}
+
+.links:nth-child(1) .links__img {
+  
+  background: url("i/WonderInk.png") no-repeat;
+  background-size:contain;
+  background-position-y: center;
+  background-color: #003b5c;
+  width: 50%;
+}
+
+.links:nth-child(2) .links__img {
+  background: url("i/propresenterMessages.png") no-repeat, linear-gradient(#fea20a, #ff541b);
+  background-size:70%;
+  background-position-y: center;
+  background-position-x: 1rem;
+  padding: 1.5rem;
+  width: 50%;
+}
+
+.links:nth-child(3) .links__img {
+  
+  background: url("i/1116logo_white.png") no-repeat;
+  background-size:70%;
+  background-position-y: center;
+  background-color: #018ec3;
+  background-position-x: 1rem;
+  padding: 1.5rem;
+  width: 50%;
+}
+
+.links p {
+  width: 75%;
+}
+
+footer {
+  width: 5%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+@media screen and (max-width: 1216px) {
+  .container {
+    max-width: 100%;
+}
+
+  .header__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .links {
+    margin-bottom: 1.3rem;
+    width: 95%;
+  }
+
+  footer {
+    width: 15%;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Eleven Sixteen Tab",
+  "version": "0.01",
+  "description": "Launch page for teaching",
+  "chrome_url_overrides":{
+    "newtab": "index.html"
+  },
+  "icons": {
+    "48": "i/1116logo.png"
+  },
+  "manifest_version": 3
+}
